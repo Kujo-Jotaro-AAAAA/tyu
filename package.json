@@ -2,8 +2,10 @@
   "name": "tyu",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "private": true,
   "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +19,11 @@
   },
   "homepage": "https://github.com/tyuink/tyu#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "path": "^0.12.7",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
